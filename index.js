@@ -58,5 +58,5 @@ const generatePassword = (len, chars) => {
 
 module.exports = {
     passgen,
-    passgenselected
+    passgenSelected
 }
