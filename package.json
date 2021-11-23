@@ -1,5 +1,5 @@
 {
-  "name": "passgen",
+  "name": "passgenerate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "passgen",
+    "passgenerate",
     "password",
     "password generator"
   ],

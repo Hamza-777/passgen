@@ -1,23 +1,23 @@
-# passgen
+# passgenerate
 
 A password generator
 
 ### Install using:
 
 ```
-npm i passgen
+npm i passgenerate
 ```
 
 ### or
 
 ```
-npm install passgen
+npm install passgenerate
 ```
 
 ### How to import:
 
 ```
-const functions = require("passgen");
+const functions = require("passgenerate");
 functions.passgen();
 functions.passgenSelected();
 ```
@@ -25,7 +25,7 @@ functions.passgenSelected();
 ### or
 
 ```
-const { passgen, passgenSelected } = require("passgen");
+const { passgen, passgenSelected } = require("passgenerate");
 passgen();
 passgenSelected();
 ```
@@ -42,7 +42,7 @@ passgenSelected();
 #### Usage:
 
 ```
-const functions = require("passgen");
+const functions = require("passgenerate");
 console.log(functions.passgen());
 // #axG70@
 ```
@@ -64,7 +64,7 @@ console.log(functions.passgen(10, false, true, true));
 #### Usage:
 
 ```
-const functions = require("passgen");
+const functions = require("passgenerate");
 console.log(functions.passgenSelected());
 // 04V9nd%G*V$s
 ```
