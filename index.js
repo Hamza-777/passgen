@@ -2,7 +2,6 @@ const alphabetsSmall = 'abcdefghijklmnopqrstuvwxyz';
 const alphabetsCaps = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const numbers = '0123456789';
 const symbols = '!@#$%^&*_-+=';
-let len = 7;
 let options = {
     smallCount: 3,
     capsCount: 3,
@@ -22,7 +21,7 @@ const shuffle = (chars) => {
     return chars;
 }
 
-const passgenselected = (props = options) => {
+const passgenSelected = (props = options) => {
     let small = shuffle(alphabetsSmall + alphabetsSmall + alphabetsSmall),
         caps = shuffle(alphabetsCaps + alphabetsCaps + alphabetsCaps),
         nums = shuffle(numbers + numbers + numbers),
@@ -40,7 +39,7 @@ const generatePasswordSelected = (chars) => {
     return password;
 }
 
-const passgen = (len, wantcaps = true, wantnums = true, wantsymbols = true) => {
+const passgen = (len = 7, wantcaps = true, wantnums = true, wantsymbols = true) => {
     let chars = alphabetsSmall;
     wantcaps ? (chars += alphabetsCaps) : '';
     wantnums ? (chars += numbers) : '';
@@ -55,4 +54,9 @@ const generatePassword = (len, chars) => {
         password += chars.charAt(Math.floor(Math.random() * chars.length));
     }
     return password;
+}
+
+module.exports = {
+    passgen,
+    passgenselected
 }
